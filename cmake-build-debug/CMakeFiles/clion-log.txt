@@ -1,0 +1,6 @@
+/home/blockchain1/Downloads/clion-2019.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/blockchain1/OSmeetHomomorphic/FHE-ProLang
+-- Microsoft SEAL -> Version 3.4.5 detected
+-- Microsoft SEAL -> Library build type: Static_PIC
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FHE_ProLang"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SEAL-3.4\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FHE_ProLang">
+				<Option output="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/FHE_ProLang" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/SEAL-3.4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 FHE_ProLang"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FHE_ProLang/fast">
+				<Option output="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/FHE_ProLang" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/SEAL-3.4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 FHE_ProLang/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.h">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/fhe_prolang_main.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/main.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/test_binary.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/test_saving_key.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/../../../../usr/local/lib/cmake/SEAL-3.4/SEALConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SEAL-3.4\"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/../../../../usr/local/lib/cmake/SEAL-3.4/SEALConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SEAL-3.4\"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/../../../../usr/local/lib/cmake/SEAL-3.4/SEALTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SEAL-3.4\"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/../../../../usr/local/lib/cmake/SEAL-3.4/SEALTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SEAL-3.4\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

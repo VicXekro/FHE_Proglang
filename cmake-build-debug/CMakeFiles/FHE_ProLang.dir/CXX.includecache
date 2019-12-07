@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.cpp
+token_element.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
+string
+-
+utility
+-
+

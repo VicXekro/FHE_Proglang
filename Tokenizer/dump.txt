@@ -1,0 +1,6 @@
+/*if(!isspace(line[i])) {
+                    token += line[i];
+                } if(isspace(line[i]) || i==line.length()-1){
+                    std::cout << token << std::endl;
+                    token = "";
+                }*/
