@@ -4,3 +4,77 @@
                     std::cout << token << std::endl;
                     token = "";
                 }*/
+
+
+
+                // check if character is not space else jump
+                if(!isspace(line[i])){
+                    line_element = line[i];
+                    // Check if token is parenthesis
+                    if (line_element=="(" || line_element==")"){
+                        Token_element tokenElement(Token_element::TOKEN_PARENTHESES,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        break;
+                    }
+                    // check if token is curly-braces
+                    else if (line_element=="{" || line_element=="}"){
+                        Token_element tokenElement(Token_element::TOKEN_BRACES,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        break;
+                    }
+                    // Check if token is operator
+                    else if (Token_element::is_operator(line_element)){
+                        Token_element tokenElement(Token_element::TOKEN_OPERATOR,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        break;
+                    }
+
+                    else{
+                        token+=line_element;
+                        if(((i+1)<=length_line) && (isspace(line[i+1])|| i==line.length()-1)) {
+                            std::cout << token << std::endl; //to comment later
+
+                            //check if token is datatype
+                            if (Token_element::is_datatype(token)) {
+                                Token_element tokenElement(Token_element::TOKEN_DATATYPE, token, line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+                            // Check if token is reserved word
+                            else if(Token_element::is_reserved_word(token)){
+                                Token_element tokenElement(token,"",line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+                        }
+                        i += 1;
+                    }
+
+
+
+                    //check if next character is space or end of line
+                    if(((i+1)<=length_line) && (isspace(line[i+1])|| i==line.length()-1)){
+                        std::cout << token << std::endl; //to comment later
+
+                        //check if token is datatype
+                        if(Token_element::is_datatype(token)){
+                            Token_element tokenElement(Token_element::TOKEN_DATATYPE, token, line_number);
+                            this-> list_token.push_back(tokenElement); // add token to list
+                        }
+
+                        // Check if token is reserved word
+                        else if(Token_element::is_reserved_word(token)){
+                            Token_element tokenElement(token,"",line_number);
+                            this->list_token.push_back(tokenElement); // add token to list
+                        }
+                        //Token is identifier
+                        else{
+                            if (line[i+1]){}
+                            //Token_element tokenElement(Token_element::TOKEN_IDENTIFIER, token, line_number);
+                            //this->list_token.push_back(tokenElement);
+                        }
+
+                        // Token is an identifier
+
+                        token = "";
+                        i += 1; // skip space character
+                    }
+                }

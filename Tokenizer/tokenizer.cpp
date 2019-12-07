@@ -16,31 +16,84 @@ void Tokenizer::tokenize_sourceCode() {
 
         while (std::getline(file, line)) {
             std::string token;
+            std::string line_element;
             int length_line = line.length();
             for(int i= 0; i< length_line; i++){
-
-                // check if character is not space else jump
                 if(!isspace(line[i])){
-                    token+= line[i];
-                    //check if next character is space or end of line
-                    if(((i+1)<=length_line) && (isspace(line[i+1])|| i==line.length()-1)){
-                        std::cout << token << std::endl;
+                    line_element=line[i];
+                    // Check if token is parenthesis
+                    if (line_element=="(" || line_element==")"){
+                        Token_element tokenElement(Token_element::TOKEN_PARENTHESES,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        //break;
+                    }
+                        // check if token is curly-braces
+                    else if (line_element=="{" || line_element=="}"){
+                        Token_element tokenElement(Token_element::TOKEN_BRACES,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        //break;
+                    }
+                        // Check if token is operator
+                    else if (Token_element::is_operator(line_element)){
+                        Token_element tokenElement(Token_element::TOKEN_OPERATOR,token,line_number);
+                        this->list_token.push_back(tokenElement);
+                        //break;
+                    }
+                    else {
+                        token+=line_element;
+                        if ((i+1)<length_line) {
+                            std::string lookahead_char;
+                            lookahead_char.push_back(line[i+1]);
+                            if( Token_element::is_operator(lookahead_char) || lookahead_char=="{" ||
+                                  lookahead_char=="}" || lookahead_char=="(" || lookahead_char==")" || isspace(line[i+1])){
 
-                        //check if token is datatype
-                        if(Token_element::is_datatype(token)){
-                            Token_element tokenElement(Token_element::TOKEN_DATATYPE, token, line_number);
-                            this-> list_token.push_back(tokenElement); // add token to list
+                                //check if token is datatype
+                                if (Token_element::is_datatype(token)) {
+                                    Token_element tokenElement(Token_element::TOKEN_DATATYPE, token, line_number);
+                                    this->list_token.push_back(tokenElement); // add token to list
+                                }
+                                    // Check if token is reserved word
+                                else if(Token_element::is_reserved_word(token)){
+                                    Token_element tokenElement(token,"",line_number);
+                                    this->list_token.push_back(tokenElement); // add token to list
+                                }
+                                //check if number
+                                else if(Token_element::is_number(token)){
+                                    Token_element tokenElement(Token_element::TOKEN_VALUE,token,line_number);
+                                    this->list_token.push_back(tokenElement); // add token to list
+                                }
+
+                                //check if identifier
+                                else{
+                                    Token_element tokenElement(Token_element::TOKEN_IDENTIFIER,token,line_number);
+                                    this->list_token.push_back(tokenElement); // add token to list
+                                }
+                                token = "";
+                            }
+                        } else if (i==length_line-1){
+                            //check if token is datatype
+                            if (Token_element::is_datatype(token)) {
+                                Token_element tokenElement(Token_element::TOKEN_DATATYPE, token, line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+                                // Check if token is reserved word
+                            else if(Token_element::is_reserved_word(token)){
+                                Token_element tokenElement(token,"",line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+
+                            //check if number
+                            else if(Token_element::is_number(token)){
+                                Token_element tokenElement(Token_element::TOKEN_VALUE,token,line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+
+                            else{
+                                Token_element tokenElement(Token_element::TOKEN_IDENTIFIER,token,line_number);
+                                this->list_token.push_back(tokenElement); // add token to list
+                            }
+                            token = "";
                         }
-
-                        // Check if token is reserved word
-                        if(Token_element::is_reserved_word(token)){
-                            Token_element tokenElement(token,"",line_number);
-                            this->list_token.push_back(tokenElement); // add token to list
-                            std::cout << "yup reserved word"<<std::endl;
-                        }
-
-                        token = "";
-                        i += 1; // skip space character
                     }
                 }
             }
@@ -52,7 +105,13 @@ void Tokenizer::tokenize_sourceCode() {
         std::cerr<<" Cannot Open file" << file_path <<std::endl;
     }
 
+    /*int count = 0;
     for(auto & i : list_token){
-        std::cout<<i.get_str_value()<<std::endl;
-    }
+        if(i.get_line() == count)
+            std::cout<<i.get_str_value();
+        else{
+            count = i.get_line();
+            std::cout<<"\n"<<i.get_str_value();
+        }
+    }*/
 }
