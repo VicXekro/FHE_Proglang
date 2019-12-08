@@ -23,6 +23,8 @@ void Syntax_Converter::convert() {
 
     define_operation(final_cpp_file, functionStatement);
 
+    print_method_definition(final_cpp_file, functionStatement);
+
     run_method_definition(final_cpp_file, runStatement);
 
     std::cout<<final_cpp_file;
@@ -76,33 +78,52 @@ void Syntax_Converter::define_operation(std::string& final_cpp_file, Function_St
         }else if(operator_it->get_value() == "-"){
             if(operands_jt->get_id()==Token_element::TOKEN_VALUE){
                 final_cpp_file+="    Plaintext plain_"+operands_jt->get_value()+" = encoder.encode("+operands_jt->get_value()+");\n";
-                final_cpp_file+="    evaluator.add_plain(cipher_"+operands_it->get_value()+",plain_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file+="    evaluator.sub_plain(cipher_"+operands_it->get_value()+",plain_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
 
             }else if (operands_it->get_id()==Token_element::TOKEN_VALUE){
                 final_cpp_file+="    Plaintext plain_"+operands_it->get_value()+" = encoder.encode("+operands_it->get_value()+");\n";
-                final_cpp_file+="    evaluator.add_plain(cipher_"+operands_jt->get_value()+",plain_"+operands_it->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file+="    evaluator.sub_plain(cipher_"+operands_jt->get_value()+",plain_"+operands_it->get_value()+",cipher_"+i.get_identifiers()+");\n";
             }else{
-                final_cpp_file +="    evaluator.add(cipher_"+operands_it->get_value()+",cipher_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.sub(cipher_"+operands_it->get_value()+",cipher_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
             }
 
          //first mult
         }else if(operator_it->get_value() == "*"){
             if(operands_jt->get_id()==Token_element::TOKEN_VALUE){
                 final_cpp_file+="    Plaintext plain_"+operands_jt->get_value()+" = encoder.encode("+operands_jt->get_value()+");\n";
-                final_cpp_file+="    evaluator.add_plain(cipher_"+operands_it->get_value()+",plain_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file+="    evaluator.multiply_plain(cipher_"+operands_it->get_value()+",plain_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.relinearize_inplace(cipher_"+i.get_identifiers()+", relin_keys);\n";
 
             }else if (operands_it->get_id()==Token_element::TOKEN_VALUE){
                 final_cpp_file+="    Plaintext plain_"+operands_it->get_value()+" = encoder.encode("+operands_it->get_value()+");\n";
-                final_cpp_file+="    evaluator.add_plain(cipher_"+operands_jt->get_value()+",plain_"+operands_it->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file+="    evaluator.multiply_plain(cipher_"+operands_jt->get_value()+",plain_"+operands_it->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.relinearize_inplace(cipher_"+i.get_identifiers()+", relin_keys);\n";
             }else{
-                final_cpp_file +="    evaluator.add(cipher_"+operands_it->get_value()+",cipher_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.multiply(cipher_"+operands_it->get_value()+",cipher_"+operands_jt->get_value()+",cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.relinearize_inplace(cipher_"+i.get_identifiers()+", relin_keys);\n";
             }
 
          //exponentiation
         }else if(operator_it->get_value()=="^"){
+            if(operands_jt->get_id()==Token_element::TOKEN_VALUE){
+                final_cpp_file +="    evaluator.exponentiate(cipher_"+operands_it->get_value()+", "+operands_jt->get_value()+
+                                    ", cipher_"+i.get_identifiers()+");\n";
+                final_cpp_file +="    evaluator.relinearize_inplace(cipher_"+i.get_identifiers()+", relin_keys);\n";
 
+            } else{
+                std::cerr<<"Expected litteral integer after ^ operator, line "<<operands_jt->get_line()<<std::endl;
+                exit(0);
+            }
         }
     }
+}
+
+void Syntax_Converter::print_method_definition(std::string& final_cpp_file, Function_Statement functionStatement){
+    for(auto &i: functionStatement.print_statement){
+        final_cpp_file += "    decryptor.decrypt(cipher_"+i.get_identifier()+", plain_"+i.get_identifier()+");\n";
+        final_cpp_file += "    cout<< \""+i.get_identifier()+"\" << encoder.decode_int32(plain_"+i.get_identifier()+")<<endl;\n";
+    }
+    final_cpp_file+="}\n";
 }
 
 void Syntax_Converter::run_method_definition(std::string& file_cpp, Run_Statement runStatement){

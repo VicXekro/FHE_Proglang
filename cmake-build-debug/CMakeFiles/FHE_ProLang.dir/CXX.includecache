@@ -48,13 +48,3 @@ iostream
 token_element.h
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
 
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/fhe_prolang_main.cpp
-Tokenizer/tokenizer.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
-Tokenizer/token_element.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
-iostream
--
-Parser/syntax_converter.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_converter.h
-

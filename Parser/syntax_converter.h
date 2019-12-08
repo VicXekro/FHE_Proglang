@@ -36,6 +36,7 @@ class Syntax_Converter {
     void define_params_seal(std::string& final_cpp_file, Function_Statement functionStatement);
     void define_operation(std::string& final_cpp_file, Function_Statement functionStatement);
     void run_method_definition(std::string& file_cpp, Run_Statement runStatement);
+    void print_method_definition(std::string& final_cpp_file, Function_Statement functionStatement);
 };
 
 
