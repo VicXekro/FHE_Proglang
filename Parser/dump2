@@ -1,0 +1,16 @@
+if(i->get_id()==Token_element::TOKEN_PARENTHESES) {
+            list_token->erase(i);
+            std::cout<<"token erased"<<i->get_line();
+            while(i->get_value()!=")"){
+                j= std::next(i);
+                if(i->get_id()==Token_element::TOKEN_DATATYPE && j->get_id()==Token_element::TOKEN_IDENTIFIER){
+                    Arguments argument(i->get_value(),j->get_value());
+                    list_token->erase(i);
+                    list_token->erase(i);
+                    std::cout<<"Argument detected"<<i->get_line();
+                }
+            }
+        }else{
+            std::cerr<<"Expecting paranthesis at line "<<i->get_line();
+            exit(0);
+        }s

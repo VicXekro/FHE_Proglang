@@ -3,16 +3,16 @@
 //
 #include "statement.h"
 
-Declaration_Statement::Declaration_Statement(std::string& type, Token_element &datatype, Token_element &identifier) {
+Declaration_Statement::Declaration_Statement(std::string& type, const std::string &datatype, const std::string &identifier) {
     this->type = type;
     this->datatype = datatype;
     this->identifier = identifier;
 }
 
-Token_element& Declaration_Statement::get_data_type() {
+std::string Declaration_Statement::get_data_type() {
     return this->datatype;
 }
 
-Token_element& Declaration_Statement::get_identifier() {
+std::string Declaration_Statement::get_identifier() {
     return this->identifier;
 }

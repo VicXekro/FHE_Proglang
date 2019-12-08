@@ -27,31 +27,59 @@ void Syntax_Analyzer::parse_function(std::vector<Token_element>* list_token) {
         std::string type = "function";
         Function_Statement functionStatement(type);
         int count = 0;
+
+        //get the return type and name of the function
         functionStatement.set_identifier_datatype(k->get_value(), i->get_value());
+
         list_token->erase(i);//erase first element
         list_token->erase(i);//erase second element
         list_token->erase(i);//erase third element
 
-        while(i->get_value()!=")"){
-            if(i->get_id()==Token_element::TOKEN_PARENTHESES){
-                list_token->erase(i);
-
-            }
-        }
-
-    for(; i != list_token->end(); ++i){
-        if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
-
+        //get the arguments of the function
+        if(i->get_id()==Token_element::TOKEN_PARENTHESES) {
             list_token->erase(i);
-            if(i->get_id()==Token_element::TOKEN_PARENTHESES){
-
+            std::cout<<"token erased"<<i->get_line();
+            while(i->get_value()!=")"){
+                Arguments arguments;
+                if(i->get_id()==Token_element::TOKEN_DATATYPE) {
+                    arguments.set_datatype(i->get_value());
+                    i = std::next(i);
+                    if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                        arguments.set_identifier(i->get_value());
+                        functionStatement.add_arguments(arguments);
+                    }
+                }
+                i = std::next(i);
             }
+            //std::cout<<"end while"<<i->get_value();
+            list_token->erase(i);
+            std::cout<<"errased"<<i->get_value();
+
+            //get different statement of the function
+            if(i->get_id()==Token_element::TOKEN_BRACES){
+                i = std::next(i);
+                if(i->get_id()==Token_element::TOKEN_NEW_LINE){
+                    while (i->get_id()!="}"){
+
+                    }
+                }else{
+                    std::cerr<<"Expecting new line at line "<<i->get_line();
+                    exit(0);
+                }
+            }else{
+                std::cerr<<"Expecting braces at line "<<i->get_line();
+                exit(0);
+            }
+        }else{
+            std::cerr<<"Expecting paranthesis at line "<<i->get_line();
+            exit(0);
         }
-    }
+
     }
     else{
       std::cerr<<"Expecting method declaration at line "<<i->get_line() <<std::endl;
       exit(0);
     }
+
 
 }
