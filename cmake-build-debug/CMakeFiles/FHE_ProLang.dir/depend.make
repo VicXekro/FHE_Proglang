@@ -23,15 +23,14 @@ CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Tokenizer/
 
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Parser/Statement/statement.cpp
 
-CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: ../Parser/block_statement.cpp
-CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: ../Parser/block_statement.h
-
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o: ../Parser/syntax_analyzer.cpp
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o: ../Parser/syntax_analyzer.h
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o: ../Tokenizer/token_element.h
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o: ../Tokenizer/tokenizer.h
 
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Parser/Statement/statement.h
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Parser/syntax_analyzer.h
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Parser/syntax_converter.cpp
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Parser/syntax_converter.h
 CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Tokenizer/token_element.h
@@ -46,6 +45,7 @@ CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o: ../Tokenizer/tokenizer.h
 
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Parser/syntax_analyzer.h
+CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Parser/syntax_converter.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Tokenizer/token_element.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Tokenizer/tokenizer.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../fhe_prolang_main.cpp

@@ -87,6 +87,7 @@ void Syntax_Analyzer::parse_sourceCode(std::vector<Token_element>* list_token) {
                                 }
                                 i = std::next(i);
                             }
+                            functionStatement.expressions.push_back(expressionStatement);
                         }
 
 
@@ -155,5 +156,13 @@ void Syntax_Analyzer::parse_sourceCode(std::vector<Token_element>* list_token) {
       std::cerr<<"Expecting method declaration at line "<<i->get_line() <<std::endl;
       exit(0);
     }
+}
+
+Function_Statement Syntax_Analyzer::get_function_statement() {
+    return this->functionStatement;
+}
+
+Run_Statement Syntax_Analyzer::get_run_statement() {
+    return this->runStatement;
 }
 

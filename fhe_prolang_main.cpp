@@ -4,10 +4,10 @@
 #include "Tokenizer/tokenizer.h"
 #include "Tokenizer/token_element.h"
 #include <iostream>
-#include "Parser/syntax_analyzer.h"
+#include "Parser/syntax_converter.h"
 
 int main(int argc, char**argv){
-    Syntax_Analyzer syntaxAnalyzer(argv[1]);
-    syntaxAnalyzer.analyze();
+    Syntax_Converter syntaxConverter(argv[1]);
+    syntaxConverter.convert();
     return 0;
 }

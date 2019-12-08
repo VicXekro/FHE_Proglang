@@ -107,12 +107,6 @@
 		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h">
 			<Option target="FHE_ProLang"/>
 		</Unit>
-		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.cpp">
-			<Option target="FHE_ProLang"/>
-		</Unit>
-		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.h">
-			<Option target="FHE_ProLang"/>
-		</Unit>
 		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.cpp">
 			<Option target="FHE_ProLang"/>
 		</Unit>

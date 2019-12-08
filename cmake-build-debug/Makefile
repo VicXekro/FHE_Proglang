@@ -285,33 +285,6 @@ Parser/Statement/statement.cpp.s:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.s
 .PHONY : Parser/Statement/statement.cpp.s
 
-Parser/block_statement.o: Parser/block_statement.cpp.o
-
-.PHONY : Parser/block_statement.o
-
-# target to build an object file
-Parser/block_statement.cpp.o:
-	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o
-.PHONY : Parser/block_statement.cpp.o
-
-Parser/block_statement.i: Parser/block_statement.cpp.i
-
-.PHONY : Parser/block_statement.i
-
-# target to preprocess a source file
-Parser/block_statement.cpp.i:
-	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.i
-.PHONY : Parser/block_statement.cpp.i
-
-Parser/block_statement.s: Parser/block_statement.cpp.s
-
-.PHONY : Parser/block_statement.s
-
-# target to generate assembly for a file
-Parser/block_statement.cpp.s:
-	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.s
-.PHONY : Parser/block_statement.cpp.s
-
 Parser/syntax_analyzer.o: Parser/syntax_analyzer.cpp.o
 
 .PHONY : Parser/syntax_analyzer.o
@@ -555,9 +528,6 @@ help:
 	@echo "... Parser/Statement/statement.o"
 	@echo "... Parser/Statement/statement.i"
 	@echo "... Parser/Statement/statement.s"
-	@echo "... Parser/block_statement.o"
-	@echo "... Parser/block_statement.i"
-	@echo "... Parser/block_statement.s"
 	@echo "... Parser/syntax_analyzer.o"
 	@echo "... Parser/syntax_analyzer.i"
 	@echo "... Parser/syntax_analyzer.s"
