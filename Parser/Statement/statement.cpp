@@ -3,3 +3,7 @@
 //
 
 #include "statement.h"
+
+std::string Statement::get_type() {
+    return this->type;
+}

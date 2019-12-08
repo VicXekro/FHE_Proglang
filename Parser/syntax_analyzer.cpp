@@ -60,7 +60,28 @@ void Syntax_Analyzer::parse_function(std::vector<Token_element>* list_token) {
                 i = std::next(i);
                 if(i->get_id()==Token_element::TOKEN_NEW_LINE){
                     while (i->get_id()!="}"){
+                        if(i->get_id()==Token_element::TOKEN_DATATYPE){
+                            std::string type1 = "declaration";
+                            Declaration_Statement declarationStatement(type1);
+                            declarationStatement.set_data_type(i->get_value());
+                            i = std::next(i);
+                            if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                                declarationStatement.set_identifier(i->get_value());
+                            }
+                        }else if (i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                            i = std::next(i);
+                            while(i->get_value()!=Token_element::TOKEN_NEW_LINE){
 
+                            }
+                        }else if (i->get_id()==Token_element::TOKEN_PRINT){
+                            Print_Statement printStatement(Token_element::TOKEN_PRINT);
+                            i = std::next(i);
+                            if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                                printStatement.set_identifier(i->get_value());
+                                functionStatement.add_to_block(printStatement);
+                            }
+                        }
+                        i=std::next(i);
                     }
                 }else{
                     std::cerr<<"Expecting new line at line "<<i->get_line();

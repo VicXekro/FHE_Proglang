@@ -177,6 +177,33 @@ Parser/Statement/declarartion_statement.cpp.s:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.s
 .PHONY : Parser/Statement/declarartion_statement.cpp.s
 
+Parser/Statement/expression_statement.o: Parser/Statement/expression_statement.cpp.o
+
+.PHONY : Parser/Statement/expression_statement.o
+
+# target to build an object file
+Parser/Statement/expression_statement.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.o
+.PHONY : Parser/Statement/expression_statement.cpp.o
+
+Parser/Statement/expression_statement.i: Parser/Statement/expression_statement.cpp.i
+
+.PHONY : Parser/Statement/expression_statement.i
+
+# target to preprocess a source file
+Parser/Statement/expression_statement.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.i
+.PHONY : Parser/Statement/expression_statement.cpp.i
+
+Parser/Statement/expression_statement.s: Parser/Statement/expression_statement.cpp.s
+
+.PHONY : Parser/Statement/expression_statement.s
+
+# target to generate assembly for a file
+Parser/Statement/expression_statement.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.s
+.PHONY : Parser/Statement/expression_statement.cpp.s
+
 Parser/Statement/function_statement.o: Parser/Statement/function_statement.cpp.o
 
 .PHONY : Parser/Statement/function_statement.o
@@ -203,6 +230,33 @@ Parser/Statement/function_statement.s: Parser/Statement/function_statement.cpp.s
 Parser/Statement/function_statement.cpp.s:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.s
 .PHONY : Parser/Statement/function_statement.cpp.s
+
+Parser/Statement/print_statement.o: Parser/Statement/print_statement.cpp.o
+
+.PHONY : Parser/Statement/print_statement.o
+
+# target to build an object file
+Parser/Statement/print_statement.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o
+.PHONY : Parser/Statement/print_statement.cpp.o
+
+Parser/Statement/print_statement.i: Parser/Statement/print_statement.cpp.i
+
+.PHONY : Parser/Statement/print_statement.i
+
+# target to preprocess a source file
+Parser/Statement/print_statement.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.i
+.PHONY : Parser/Statement/print_statement.cpp.i
+
+Parser/Statement/print_statement.s: Parser/Statement/print_statement.cpp.s
+
+.PHONY : Parser/Statement/print_statement.s
+
+# target to generate assembly for a file
+Parser/Statement/print_statement.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.s
+.PHONY : Parser/Statement/print_statement.cpp.s
 
 Parser/Statement/statement.o: Parser/Statement/statement.cpp.o
 
@@ -489,9 +543,15 @@ help:
 	@echo "... Parser/Statement/declarartion_statement.o"
 	@echo "... Parser/Statement/declarartion_statement.i"
 	@echo "... Parser/Statement/declarartion_statement.s"
+	@echo "... Parser/Statement/expression_statement.o"
+	@echo "... Parser/Statement/expression_statement.i"
+	@echo "... Parser/Statement/expression_statement.s"
 	@echo "... Parser/Statement/function_statement.o"
 	@echo "... Parser/Statement/function_statement.i"
 	@echo "... Parser/Statement/function_statement.s"
+	@echo "... Parser/Statement/print_statement.o"
+	@echo "... Parser/Statement/print_statement.i"
+	@echo "... Parser/Statement/print_statement.s"
 	@echo "... Parser/Statement/statement.o"
 	@echo "... Parser/Statement/statement.i"
 	@echo "... Parser/Statement/statement.s"

@@ -92,7 +92,13 @@
 		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp">
 			<Option target="FHE_ProLang"/>
 		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/expression_statement.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
 		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp">
+			<Option target="FHE_ProLang"/>
+		</Unit>
+		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/print_statement.cpp">
 			<Option target="FHE_ProLang"/>
 		</Unit>
 		<Unit filename="/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.cpp">

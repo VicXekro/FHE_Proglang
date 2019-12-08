@@ -22,3 +22,19 @@ void Function_Statement::add_arguments(Arguments arguments) {
 void Function_Statement::add_to_block(class Statement statement) {
     this->add_to_block(statement);
 }
+
+std::string Function_Statement::get_datatype() {
+    return this->datatype;
+}
+
+std::string Function_Statement::get_identifier() {
+    return this->identifier;
+}
+
+std::vector<Statement>& Function_Statement::get_block(){
+    return this->block;
+}
+
+std::vector<Arguments>& Function_Statement::get_arguments() {
+    return this->arguments;
+}

@@ -13,6 +13,10 @@ CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Parser/
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Tokenizer/token_element.h
 
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Parser/Statement/print_statement.cpp
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Parser/Statement/statement.h
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Tokenizer/token_element.h
+
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Parser/Statement/statement.cpp
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Tokenizer/token_element.h
