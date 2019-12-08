@@ -123,6 +123,87 @@ FHE_ProLang/fast:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/build
 .PHONY : FHE_ProLang/fast
 
+Parser/Statement/arguments.o: Parser/Statement/arguments.cpp.o
+
+.PHONY : Parser/Statement/arguments.o
+
+# target to build an object file
+Parser/Statement/arguments.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o
+.PHONY : Parser/Statement/arguments.cpp.o
+
+Parser/Statement/arguments.i: Parser/Statement/arguments.cpp.i
+
+.PHONY : Parser/Statement/arguments.i
+
+# target to preprocess a source file
+Parser/Statement/arguments.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.i
+.PHONY : Parser/Statement/arguments.cpp.i
+
+Parser/Statement/arguments.s: Parser/Statement/arguments.cpp.s
+
+.PHONY : Parser/Statement/arguments.s
+
+# target to generate assembly for a file
+Parser/Statement/arguments.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.s
+.PHONY : Parser/Statement/arguments.cpp.s
+
+Parser/Statement/declarartion_statement.o: Parser/Statement/declarartion_statement.cpp.o
+
+.PHONY : Parser/Statement/declarartion_statement.o
+
+# target to build an object file
+Parser/Statement/declarartion_statement.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o
+.PHONY : Parser/Statement/declarartion_statement.cpp.o
+
+Parser/Statement/declarartion_statement.i: Parser/Statement/declarartion_statement.cpp.i
+
+.PHONY : Parser/Statement/declarartion_statement.i
+
+# target to preprocess a source file
+Parser/Statement/declarartion_statement.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.i
+.PHONY : Parser/Statement/declarartion_statement.cpp.i
+
+Parser/Statement/declarartion_statement.s: Parser/Statement/declarartion_statement.cpp.s
+
+.PHONY : Parser/Statement/declarartion_statement.s
+
+# target to generate assembly for a file
+Parser/Statement/declarartion_statement.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.s
+.PHONY : Parser/Statement/declarartion_statement.cpp.s
+
+Parser/Statement/function_statement.o: Parser/Statement/function_statement.cpp.o
+
+.PHONY : Parser/Statement/function_statement.o
+
+# target to build an object file
+Parser/Statement/function_statement.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o
+.PHONY : Parser/Statement/function_statement.cpp.o
+
+Parser/Statement/function_statement.i: Parser/Statement/function_statement.cpp.i
+
+.PHONY : Parser/Statement/function_statement.i
+
+# target to preprocess a source file
+Parser/Statement/function_statement.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.i
+.PHONY : Parser/Statement/function_statement.cpp.i
+
+Parser/Statement/function_statement.s: Parser/Statement/function_statement.cpp.s
+
+.PHONY : Parser/Statement/function_statement.s
+
+# target to generate assembly for a file
+Parser/Statement/function_statement.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.s
+.PHONY : Parser/Statement/function_statement.cpp.s
+
 Parser/Statement/statement.o: Parser/Statement/statement.cpp.o
 
 .PHONY : Parser/Statement/statement.o
@@ -150,6 +231,33 @@ Parser/Statement/statement.cpp.s:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.s
 .PHONY : Parser/Statement/statement.cpp.s
 
+Parser/block_statement.o: Parser/block_statement.cpp.o
+
+.PHONY : Parser/block_statement.o
+
+# target to build an object file
+Parser/block_statement.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o
+.PHONY : Parser/block_statement.cpp.o
+
+Parser/block_statement.i: Parser/block_statement.cpp.i
+
+.PHONY : Parser/block_statement.i
+
+# target to preprocess a source file
+Parser/block_statement.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.i
+.PHONY : Parser/block_statement.cpp.i
+
+Parser/block_statement.s: Parser/block_statement.cpp.s
+
+.PHONY : Parser/block_statement.s
+
+# target to generate assembly for a file
+Parser/block_statement.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.s
+.PHONY : Parser/block_statement.cpp.s
+
 Parser/syntax_analyzer.o: Parser/syntax_analyzer.cpp.o
 
 .PHONY : Parser/syntax_analyzer.o
@@ -176,6 +284,33 @@ Parser/syntax_analyzer.s: Parser/syntax_analyzer.cpp.s
 Parser/syntax_analyzer.cpp.s:
 	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.s
 .PHONY : Parser/syntax_analyzer.cpp.s
+
+Parser/syntax_converter.o: Parser/syntax_converter.cpp.o
+
+.PHONY : Parser/syntax_converter.o
+
+# target to build an object file
+Parser/syntax_converter.cpp.o:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o
+.PHONY : Parser/syntax_converter.cpp.o
+
+Parser/syntax_converter.i: Parser/syntax_converter.cpp.i
+
+.PHONY : Parser/syntax_converter.i
+
+# target to preprocess a source file
+Parser/syntax_converter.cpp.i:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.i
+.PHONY : Parser/syntax_converter.cpp.i
+
+Parser/syntax_converter.s: Parser/syntax_converter.cpp.s
+
+.PHONY : Parser/syntax_converter.s
+
+# target to generate assembly for a file
+Parser/syntax_converter.cpp.s:
+	$(MAKE) -f CMakeFiles/FHE_ProLang.dir/build.make CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.s
+.PHONY : Parser/syntax_converter.cpp.s
 
 Tokenizer/token_element.o: Tokenizer/token_element.cpp.o
 
@@ -348,12 +483,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... FHE_ProLang"
 	@echo "... edit_cache"
+	@echo "... Parser/Statement/arguments.o"
+	@echo "... Parser/Statement/arguments.i"
+	@echo "... Parser/Statement/arguments.s"
+	@echo "... Parser/Statement/declarartion_statement.o"
+	@echo "... Parser/Statement/declarartion_statement.i"
+	@echo "... Parser/Statement/declarartion_statement.s"
+	@echo "... Parser/Statement/function_statement.o"
+	@echo "... Parser/Statement/function_statement.i"
+	@echo "... Parser/Statement/function_statement.s"
 	@echo "... Parser/Statement/statement.o"
 	@echo "... Parser/Statement/statement.i"
 	@echo "... Parser/Statement/statement.s"
+	@echo "... Parser/block_statement.o"
+	@echo "... Parser/block_statement.i"
+	@echo "... Parser/block_statement.s"
 	@echo "... Parser/syntax_analyzer.o"
 	@echo "... Parser/syntax_analyzer.i"
 	@echo "... Parser/syntax_analyzer.s"
+	@echo "... Parser/syntax_converter.o"
+	@echo "... Parser/syntax_converter.i"
+	@echo "... Parser/syntax_converter.s"
 	@echo "... Tokenizer/token_element.o"
 	@echo "... Tokenizer/token_element.i"
 	@echo "... Tokenizer/token_element.s"

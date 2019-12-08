@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o"
+  "CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o"
+  "CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o"
   "CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o"
+  "CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o"
   "CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o"
+  "CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o"
   "CMakeFiles/FHE_ProLang.dir/Tokenizer/token_element.cpp.o"
   "CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o"
   "CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o"

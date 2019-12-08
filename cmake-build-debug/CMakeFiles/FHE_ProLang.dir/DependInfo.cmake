@@ -4,8 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/arguments.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o"
+  "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o"
+  "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o"
   "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o"
+  "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o"
   "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o"
+  "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_converter.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o"
   "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Tokenizer/token_element.cpp.o"
   "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o"
   "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/fhe_prolang_main.cpp" "/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o"

@@ -78,3 +78,12 @@
                         i += 1; // skip space character
                     }
                 }
+
+
+void method evaluatePoly (int x){
+  int result
+  result = x^2+2*x+1
+  print result
+}
+
+run method evaluatePoly (3)

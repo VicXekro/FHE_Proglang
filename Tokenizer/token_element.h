@@ -19,10 +19,11 @@ public:
     static const std::string TOKEN_OPERATOR;
     static const std::string TOKEN_BRACES;
     static const std::string TOKEN_PARENTHESES;
+    static const std::string TOKEN_NEW_LINE;
 
     //list of reserved word used by the language
     static const size_t reser_wrd_length = 3;
-    static const size_t supp_datatype_length = 1;
+    static const size_t supp_datatype_length = 2;
     static const size_t simple_op_length = 6;
 
     static const std::string* SUPPORTED_DATATYPE;

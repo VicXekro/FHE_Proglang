@@ -15,6 +15,7 @@ const std::string Token_element::TOKEN_PRINT = "print";
 const std::string Token_element::TOKEN_OPERATOR = "operator";
 const std::string Token_element::TOKEN_BRACES = "braces";
 const std::string Token_element::TOKEN_PARENTHESES = "parentheses";
+const std::string Token_element::TOKEN_NEW_LINE = "newline";
 
 static const std::string list_reserved_word [Token_element::reser_wrd_length] = {Token_element::TOKEN_METHOD,
                                                                                  Token_element::TOKEN_PRINT,
@@ -22,7 +23,7 @@ static const std::string list_reserved_word [Token_element::reser_wrd_length] = 
 
 const std::string* Token_element::RESERVED_WORD = list_reserved_word;
 
-static const std::string supported_datatype[Token_element::supp_datatype_length]= {"int"};
+static const std::string supported_datatype[Token_element::supp_datatype_length]= {"void","int"};
 const std::string* Token_element::SUPPORTED_DATATYPE = supported_datatype;
 
 static const std::string simple_operator[Token_element::simple_op_length] = {"+","-","*","^","=",","};

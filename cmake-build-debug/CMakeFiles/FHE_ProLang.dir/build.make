@@ -161,6 +161,71 @@ CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.s
 
+CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: CMakeFiles/FHE_ProLang.dir/flags.make
+CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: ../Parser/block_statement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o -c /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.cpp
+
+CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.cpp > CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.i
+
+CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/block_statement.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.s
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o: CMakeFiles/FHE_ProLang.dir/flags.make
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o: ../Parser/Statement/declarartion_statement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o -c /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp > CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.i
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.s
+
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: CMakeFiles/FHE_ProLang.dir/flags.make
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o: ../Parser/syntax_converter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o -c /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_converter.cpp
+
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_converter.cpp > CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.i
+
+CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_converter.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.s
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: CMakeFiles/FHE_ProLang.dir/flags.make
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Parser/Statement/function_statement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o -c /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp > CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.i
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.s
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o: CMakeFiles/FHE_ProLang.dir/flags.make
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o: ../Parser/Statement/arguments.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o -c /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/arguments.cpp
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/arguments.cpp > CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.i
+
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/arguments.cpp -o CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.s
+
 # Object files for target FHE_ProLang
 FHE_ProLang_OBJECTS = \
 "CMakeFiles/FHE_ProLang.dir/main.cpp.o" \
@@ -170,7 +235,12 @@ FHE_ProLang_OBJECTS = \
 "CMakeFiles/FHE_ProLang.dir/Tokenizer/token_element.cpp.o" \
 "CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o" \
 "CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o" \
-"CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o"
+"CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o" \
+"CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o" \
+"CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o" \
+"CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o" \
+"CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o" \
+"CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o"
 
 # External object files for target FHE_ProLang
 FHE_ProLang_EXTERNAL_OBJECTS =
@@ -183,10 +253,15 @@ FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Tokenizer/token_element.cpp.o
 FHE_ProLang: CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o
 FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/syntax_analyzer.cpp.o
 FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o
+FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o
+FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o
+FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/syntax_converter.cpp.o
+FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o
+FHE_ProLang: CMakeFiles/FHE_ProLang.dir/Parser/Statement/arguments.cpp.o
 FHE_ProLang: CMakeFiles/FHE_ProLang.dir/build.make
 FHE_ProLang: /usr/local/lib/libseal-3.4.a
 FHE_ProLang: CMakeFiles/FHE_ProLang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FHE_ProLang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable FHE_ProLang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FHE_ProLang.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

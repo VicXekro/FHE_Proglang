@@ -8,6 +8,10 @@ Tokenizer::Tokenizer(std::string filename){
     this->file_path = std::move(filename);
 }
 
+std::vector<Token_element>* Tokenizer::get_list_token() {
+    return &(this->list_token);
+}
+
 void Tokenizer::tokenize_sourceCode() {
     std::ifstream file (this->file_path);
     std::string line;
@@ -23,19 +27,19 @@ void Tokenizer::tokenize_sourceCode() {
                     line_element=line[i];
                     // Check if token is parenthesis
                     if (line_element=="(" || line_element==")"){
-                        Token_element tokenElement(Token_element::TOKEN_PARENTHESES,token,line_number);
+                        Token_element tokenElement(Token_element::TOKEN_PARENTHESES,line_element,line_number);
                         this->list_token.push_back(tokenElement);
                         //break;
                     }
                         // check if token is curly-braces
                     else if (line_element=="{" || line_element=="}"){
-                        Token_element tokenElement(Token_element::TOKEN_BRACES,token,line_number);
+                        Token_element tokenElement(Token_element::TOKEN_BRACES,line_element,line_number);
                         this->list_token.push_back(tokenElement);
                         //break;
                     }
                         // Check if token is operator
                     else if (Token_element::is_operator(line_element)){
-                        Token_element tokenElement(Token_element::TOKEN_OPERATOR,token,line_number);
+                        Token_element tokenElement(Token_element::TOKEN_OPERATOR,line_element,line_number);
                         this->list_token.push_back(tokenElement);
                         //break;
                     }
@@ -97,6 +101,8 @@ void Tokenizer::tokenize_sourceCode() {
                     }
                 }
             }
+            Token_element tokenElement(Token_element::TOKEN_NEW_LINE,"",line_number);
+            this->list_token.push_back(tokenElement);
             //std::cout <<line <<std::endl;
             line_number++;
         }

@@ -18,7 +18,7 @@ class Tokenizer {
 public:
     Tokenizer (std::string filename);
     void tokenize_sourceCode();
-
+    std::vector<Token_element>* get_list_token();
 private:
     std::vector<Token_element> list_token;
     std::string file_path;

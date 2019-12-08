@@ -4,9 +4,10 @@
 #include "Tokenizer/tokenizer.h"
 #include "Tokenizer/token_element.h"
 #include <iostream>
+#include "Parser/syntax_analyzer.h"
 
 int main(int argc, char**argv){
-    Tokenizer tokenizer(argv[1]);
-    tokenizer.tokenize_sourceCode();
+    Syntax_Analyzer syntaxAnalyzer(argv[1]);
+    syntaxAnalyzer.analyze();
     return 0;
 }

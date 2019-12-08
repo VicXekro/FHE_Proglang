@@ -6,21 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.cpp
-algorithm
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/declarartion_statement.cpp
+statement.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp
+iostream
 -
-token_element.h
+statement.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.cpp
+statement.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+string
+-
+vector
+-
+../../Tokenizer/token_element.h
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.cpp
+syntax_analyzer.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.h
+Statement/statement.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.h
+../Tokenizer/tokenizer.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
 
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
 string
 -
 utility
 -
-
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.cpp
-tokenizer.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
 
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
 string
@@ -33,12 +55,4 @@ iostream
 -
 token_element.h
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
-
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/fhe_prolang_main.cpp
-Tokenizer/tokenizer.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
-Tokenizer/token_element.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
-iostream
--
 

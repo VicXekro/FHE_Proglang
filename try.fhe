@@ -1,12 +1,4 @@
-int method evaluatePoly (int x){
-  int result
-  result = x^2+2*x+1
-  print result
-}
-
-run method evaluatePoly (3)
-
-int method add(int a, int b){
+void method add(int a, int b){
   int result
   result = a + b
   print result
