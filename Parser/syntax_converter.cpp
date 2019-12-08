@@ -28,6 +28,14 @@ void Syntax_Converter::convert() {
     run_method_definition(final_cpp_file, runStatement);
 
     std::cout<<final_cpp_file;
+
+    std::string filename = functionStatement.get_identifier()+".cpp";
+    std::ofstream file (filename);
+    if(file.is_open()){
+        file<<final_cpp_file;
+    }else{
+        std::cerr<< "error cannot open file " << std::endl;
+    }
 }
 
 void Syntax_Converter::define_method_header(std::string& final_cpp_file, Function_Statement functionStatement){
@@ -121,7 +129,7 @@ void Syntax_Converter::define_operation(std::string& final_cpp_file, Function_St
 void Syntax_Converter::print_method_definition(std::string& final_cpp_file, Function_Statement functionStatement){
     for(auto &i: functionStatement.print_statement){
         final_cpp_file += "    decryptor.decrypt(cipher_"+i.get_identifier()+", plain_"+i.get_identifier()+");\n";
-        final_cpp_file += "    cout<< \""+i.get_identifier()+"\" << encoder.decode_int32(plain_"+i.get_identifier()+")<<endl;\n";
+        final_cpp_file += "    cout<< \""+i.get_identifier()+"   \" << encoder.decode_int32(plain_"+i.get_identifier()+")<<endl;\n";
     }
     final_cpp_file+="}\n";
 }

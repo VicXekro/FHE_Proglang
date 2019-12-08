@@ -4,4 +4,4 @@ void method mult (int a, int b){
   print result
 }
 
-run method add(2,3)
+run method mult(2,3)

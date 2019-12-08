@@ -27,10 +27,10 @@ class Syntax_Converter {
                                      "\n"
                                      "    auto publicKey = keyGen.public_key();\n"
                                      "    auto secretKey = keyGen.secret_key();\n"
-                                     "    auto relin_keys = keygen.relin_keys();\n\n"
-                                     "    Encryptor encryptor(context, public_key);\n"
+                                     "    auto relin_keys = keyGen.relin_keys();\n\n"
+                                     "    Encryptor encryptor(context, publicKey);\n"
                                      "    Evaluator evaluator(context);\n"
-                                     "    Decryptor decryptor(context, secret_key);\n\n";
+                                     "    Decryptor decryptor(context, secretKey);\n\n";
 
         void define_method_header(std::string& final_cpp, Function_Statement functionStatement);
     void define_params_seal(std::string& final_cpp_file, Function_Statement functionStatement);
