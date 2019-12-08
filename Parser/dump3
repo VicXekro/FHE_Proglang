@@ -1,0 +1,34 @@
+if(i->get_id()==Token_element::TOKEN_DATATYPE){
+
+                            std::string type1 = "declaration";
+                            Declaration_Statement declarationStatement(type1);
+                            declarationStatement.set_data_type(i->get_value());
+                            i = std::next(i);
+                            if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                                declarationStatement.set_identifier(i->get_value());
+                                functionStatement.declarations.push_back(declarationStatement);
+                            }
+                        }else if (i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                            std::string type2="expression";
+                            Expression_Statement expressionStatement(type2);
+                            expressionStatement.set_identifer(i->get_value());
+                            i = std::next(i);
+                            while(i->get_value()!=Token_element::TOKEN_NEW_LINE){
+                                if(i->get_id()==Token_element::TOKEN_OPERATOR && i->get_value()!="="){
+                                    expressionStatement.add_operators(*i);
+                                }else if(i->get_id()==Token_element::TOKEN_IDENTIFIER||
+                                       i->get_id()==Token_element::TOKEN_VALUE){
+                                    expressionStatement.add_operands(*i);
+                                }
+                                i = std::next(i);
+                            }
+
+                        }else if (i->get_id()==Token_element::TOKEN_PRINT){
+
+                            Print_Statement printStatement(Token_element::TOKEN_PRINT);
+                            i = std::next(i);
+                            if(i->get_id()==Token_element::TOKEN_IDENTIFIER){
+                                printStatement.set_identifier(i->get_value());
+                                functionStatement.print_statement.push_back(printStatement);
+                            }
+                        }

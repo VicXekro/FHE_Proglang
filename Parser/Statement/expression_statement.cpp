@@ -17,11 +17,11 @@ std::string Expression_Statement::get_identifiers(){
 }
 
 void Expression_Statement::add_operands(Token_element tokenElement) {
-    this->operands.push_back(operands)
+    this->operands.push_back(tokenElement);
 }
 
 void Expression_Statement::add_operators(Token_element tokenElement) {
-    this0>operators.push_back(operators);
+    this->operators.push_back(tokenElement);
 }
 
 std::vector<Token_element>& Expression_Statement::get_operands() {

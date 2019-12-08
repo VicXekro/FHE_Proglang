@@ -9,6 +9,10 @@ CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o: ../Par
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/declarartion_statement.cpp.o: ../Tokenizer/token_element.h
 
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.o: ../Parser/Statement/expression_statement.cpp
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.o: ../Parser/Statement/statement.h
+CMakeFiles/FHE_ProLang.dir/Parser/Statement/expression_statement.cpp.o: ../Tokenizer/token_element.h
+
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Parser/Statement/function_statement.cpp
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/function_statement.cpp.o: ../Tokenizer/token_element.h
@@ -18,8 +22,6 @@ CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Parser/Sta
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/print_statement.cpp.o: ../Tokenizer/token_element.h
 
 CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Parser/Statement/statement.cpp
-CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Parser/Statement/statement.h
-CMakeFiles/FHE_ProLang.dir/Parser/Statement/statement.cpp.o: ../Tokenizer/token_element.h
 
 CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: ../Parser/block_statement.cpp
 CMakeFiles/FHE_ProLang.dir/Parser/block_statement.cpp.o: ../Parser/block_statement.h
@@ -42,6 +44,7 @@ CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o: ../Tokenizer/token_element
 CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o: ../Tokenizer/tokenizer.cpp
 CMakeFiles/FHE_ProLang.dir/Tokenizer/tokenizer.cpp.o: ../Tokenizer/tokenizer.h
 
+CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Parser/Statement/statement.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Parser/syntax_analyzer.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Tokenizer/token_element.h
 CMakeFiles/FHE_ProLang.dir/fhe_prolang_main.cpp.o: ../Tokenizer/tokenizer.h

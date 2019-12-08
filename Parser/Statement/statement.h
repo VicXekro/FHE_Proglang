@@ -9,14 +9,14 @@
 #include <vector>
 #include "../../Tokenizer/token_element.h"
 
-class Statement {
+/*class Statement {
 public:
     std::string get_type();
 protected:
     std::string type;
-};
+};*/
 
-class Arguments:public Statement{
+class Arguments{
 public:
     Arguments(const std::string& datatype, const std::string& identifier);
     Arguments()= default;
@@ -31,38 +31,20 @@ private:
     std::string identifier;
 };
 
-
-class Function_Statement: public Statement{
-public:
-    explicit Function_Statement(std::string& type);
-    void add_arguments(Arguments argument);
-    void add_to_block(Statement statement);
-    void set_identifier_datatype(const std::string& identifier, const std::string& datatype);
-    std::string get_identifier();
-    std::string get_datatype();
-    std::vector<Statement>& get_block();
-    std::vector<Arguments>& get_arguments();
-private:
-    std::string  identifier;
-    std::string  datatype;
-    std::vector<Arguments> arguments;
-    std::vector<Statement> block;
-};
-
-class Declaration_Statement: public Statement{
+class Declaration_Statement{
 public:
     Declaration_Statement(std::string& type);
     void set_data_type(const std::string& datatype);
     void set_identifier(const std::string& identifier);
     std::string get_data_type();
     std::string get_identifier();
-
+    std::string type;
 private:
     std::string datatype="";
     std::string identifier="";
 };
 
-class Expression_Statement: public Statement{
+class Expression_Statement{
 public:
     Expression_Statement (const std::string& type);
     void set_identifer(const std::string& identifier);
@@ -71,19 +53,51 @@ public:
     std::vector<Token_element>& get_operators();
     std::vector<Token_element>& get_operands();
     std::string get_identifiers();
+    std::string type;
 private:
     std::vector<Token_element> operators;
     std::vector<Token_element> operands;
     std::string identifiers;
 };
 
-class Print_Statement: public Statement{
+class Print_Statement{
 public:
     explicit Print_Statement(const std::string& type);
     void set_identifier(const std::string& identifier);
     std::string get_identifier();
+    std::string type;
 private:
     std::string identifier = "";
+};
+
+class Function_Statement{
+public:
+    explicit Function_Statement(std::string& type);
+    Function_Statement()= default;
+    void add_arguments(Arguments argument);
+
+    void set_identifier_datatype(const std::string& identifier, const std::string& datatype);
+    std::string get_identifier();
+    std::string get_datatype();
+
+    std::vector<Arguments>& get_arguments();
+
+    std::vector<Declaration_Statement> declarations;
+    std::vector<Expression_Statement> expressions;
+    std::vector<Print_Statement> print_statement;
+    std::string  type;
+private:
+    std::string  identifier;
+    std::string  datatype;
+    std::vector<Arguments> arguments;
+};
+
+class Run_Statement{
+public:
+    Run_Statement ()= default;
+    std::vector<std::string> params;
+    std::string identifier;
+
 };
 
 

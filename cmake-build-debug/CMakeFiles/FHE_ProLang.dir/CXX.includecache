@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/function_statement.cpp
+iostream
+-
+statement.h
+/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
+
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
 string
 -
@@ -14,31 +20,9 @@ vector
 ../../Tokenizer/token_element.h
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
 
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.cpp
-syntax_analyzer.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.h
-Statement/statement.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/Statement/statement.h
-
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Parser/syntax_analyzer.h
-../Tokenizer/tokenizer.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
-
 /home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
 string
 -
 utility
 -
-
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/tokenizer.h
-string
--
-vector
--
-fstream
--
-iostream
--
-token_element.h
-/home/blockchain1/OSmeetHomomorphic/FHE-ProLang/Tokenizer/token_element.h
 
